@@ -20,11 +20,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9h2-KK-kdX">
-                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xzB-UX-2Q8">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="waves" translatesAutoresizingMaskIntoConstraints="NO" id="XrJ-9r-KaO">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="aXM-ca-Eat"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="XrJ-9r-KaO" secondAttribute="trailing" id="WIh-ny-YuM"/>
+                                            <constraint firstItem="XrJ-9r-KaO" firstAttribute="leading" secondItem="xzB-UX-2Q8" secondAttribute="leading" id="asZ-TR-tN6"/>
+                                            <constraint firstItem="XrJ-9r-KaO" firstAttribute="top" secondItem="xzB-UX-2Q8" secondAttribute="top" id="kiB-M5-2nr"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -38,11 +51,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xzB-UX-2Q8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="9s8-v3-M33"/>
+                            <constraint firstItem="9h2-KK-kdX" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" id="IRW-vr-Hrw"/>
+                            <constraint firstItem="9h2-KK-kdX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TBw-Rv-edD"/>
+                            <constraint firstItem="9h2-KK-kdX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="TbR-7z-62Q"/>
                             <constraint firstItem="xzB-UX-2Q8" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="YJa-MI-CJV"/>
-                            <constraint firstItem="9h2-KK-kdX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mKr-xG-9a9"/>
-                            <constraint firstItem="9h2-KK-kdX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="s5T-le-Ha3"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="9h2-KK-kdX" secondAttribute="bottom" id="sa4-e0-IEC"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="9h2-KK-kdX" secondAttribute="trailing" id="zu8-9Y-WAN"/>
+                            <constraint firstItem="9h2-KK-kdX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ymm-rf-PC4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -51,4 +64,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="waves" width="960" height="708"/>
+    </resources>
 </document>

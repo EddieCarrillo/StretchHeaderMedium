@@ -24,20 +24,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xzB-UX-2Q8">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="waves" translatesAutoresizingMaskIntoConstraints="NO" id="XrJ-9r-KaO">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="128" id="aXM-ca-Eat"/>
-                                                </constraints>
-                                            </imageView>
-                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="XrJ-9r-KaO" secondAttribute="trailing" id="WIh-ny-YuM"/>
-                                            <constraint firstItem="XrJ-9r-KaO" firstAttribute="leading" secondItem="xzB-UX-2Q8" secondAttribute="leading" id="asZ-TR-tN6"/>
-                                            <constraint firstItem="XrJ-9r-KaO" firstAttribute="top" secondItem="xzB-UX-2Q8" secondAttribute="top" id="kiB-M5-2nr"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -64,7 +51,4 @@
             </objects>
         </scene>
     </scenes>
-    <resources>
-        <image name="waves" width="960" height="708"/>
-    </resources>
 </document>

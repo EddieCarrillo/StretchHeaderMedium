@@ -10,9 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageviewHeight: NSLayoutConstraint!
+    
+    @IBOutlet weak var imageviewTop: NSLayoutConstraint!
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        scrollView.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,4 +29,11 @@ class ViewController: UIViewController {
 
 
 }
+
+extension ViewController: UIScrollViewDelegate{
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print("\(scrollView.contentOffset.y)")
+    }
+}
+
 

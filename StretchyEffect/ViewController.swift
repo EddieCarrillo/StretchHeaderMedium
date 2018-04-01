@@ -32,7 +32,17 @@ class ViewController: UIViewController {
 
 extension ViewController: UIScrollViewDelegate{
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        print("\(scrollView.contentOffset.y)")
+        let offset = scrollView.contentOffset.y
+        
+        let defaultTop: CGFloat = CGFloat(0)
+        
+        var currentTop: CGFloat = defaultTop
+        
+        if offset < 0{
+            currentTop = offset
+        }
+        
+        imageviewTop.constant = currentTop
     }
 }
 

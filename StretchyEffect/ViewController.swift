@@ -16,10 +16,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     
+    var originalHeight: CGFloat!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.delegate = self
+        originalHeight = imageviewHeight.constant
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,6 +43,9 @@ extension ViewController: UIScrollViewDelegate{
         
         if offset < 0{
             currentTop = offset
+            imageviewHeight.constant = originalHeight - offset
+        }else{
+            imageviewHeight.constant = originalHeight
         }
         
         imageviewTop.constant = currentTop
